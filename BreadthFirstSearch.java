@@ -15,6 +15,21 @@ public class BreadthFirstSearch {
     String node;
     Map<String, List<String>> graph = new HashMap<>();
 
+
+    /*
+    *        <그래프 형태>
+    *
+    *              A
+    *            /  \
+    *          B     C
+    *        /    /  |  \
+    *      D    G   H    I
+    *    /  \             \
+    *  E     F             J
+    *
+    *
+    * */
+
     public BreadthFirstSearch() {
         graph.put("A", Arrays.asList("B", "C"));
         graph.put("B", Arrays.asList("A", "D"));
